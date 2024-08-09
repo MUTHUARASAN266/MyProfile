@@ -3,50 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Website</title>
+    <title>My Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f4f4f9;
+            color: #333;
         }
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #4CAF50;
+            color: white;
             padding: 10px 0;
             text-align: center;
         }
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+        section {
             padding: 20px;
+            margin: 10px 0;
         }
-        .main {
+        .project {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
             background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
         }
-        .footer {
-            background-color: #333;
-            color: #fff;
+        footer {
             text-align: center;
             padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -54,35 +40,84 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Sample Website</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
-    <div class="container">
-        <section class="main">
-            <h2>Home</h2>
-            <p>This is the homepage of our sample website.</p>
-        </section>
-        <section class="main">
-            <h2>About</h2>
-            <p>Learn about our company and what we do.</p>
-        </section>
-        <section class="main">
-            <h2>Services</h2>
-            <p>Explore the services we offer.</p>
-        </section>
-        <section class="main">
-            <h2>Contact</h2>
-            <p>Contact us for more information.</p>
-        </section>
+
+<header>
+    <h1>My Portfolio</h1>
+    <p>Android Developer | Kotlin Enthusiast</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am an Android developer with over two years of experience in native Android app development using Kotlin. Proficient in Java and Kotlin programming languages, with strong knowledge of Android SDK, Android Studio, and Android architecture components.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Project 1: AccuWeatherSky</h3>
+        <p>Description: A weather application providing accurate weather updates.</p>
+        <p>Technologies: Kotlin, Firebase, REST APIs</p>
+        <pre>
+<code>
+// Example Kotlin code snippet
+val database = Firebase.database
+val myRef = database.getReference("weather")
+
+// Fetching weather data
+myRef.addListenerForSingleValueEvent(object : ValueEventListener {
+    override fun onDataChange(dataSnapshot: DataSnapshot) {
+        // Handle data
+    }
+
+    override fun onCancelled(error: DatabaseError) {
+        // Handle error
+    }
+})
+</code>
+        </pre>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 Sample Website. All rights reserved.</p>
-    </footer>
+
+    <div class="project">
+        <h3>Project 2: P4YH (Prescription For Your Health)</h3>
+        <p>Description: An app designed for clients looking to take the next step in their personal health and wellbeing.</p>
+        <p>Technologies: Kotlin, Firebase, Room Database</p>
+    </div>
+
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Android SDK</li>
+        <li>Kotlin and Java</li>
+        <li>Firebase Integration</li>
+        <li>RESTful APIs (Retrofit, OkHttp)</li>
+        <li>Version Control (Git, GitHub)</li>
+    </ul>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <p>Android Developer at Tamil Nadu Electricity Board (TNEB)</p>
+    <p>Worked on integrating various applications with modern technologies to improve user experience and efficiency.</p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <p>Bachelor's Degree in Computer Science</p>
+    <p>Certifications in Android Development</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+</section>
+
+<footer>
+    <p>© 2024 My Portfolio</p>
+</footer>
+
 </body>
 </html>
