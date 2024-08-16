@@ -1,152 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutharasan K - Android Developer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        .main {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Mutharasan Portfolio</title>
+    <meta name="description" content="Portfolio Template for Developer"/>
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+            rel="stylesheet"
+    />
 </head>
 <body>
+<header class="header">
+    <div class="header__content">
+        <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+                <img
+                        src="./assets/png/my_profile.jpg"
+                        alt="Ram Maheshwari Logo Image"
+                        class="header__logo-img"
+                />
+            </div>
+            <span class="header__logo-sub">Mutharasan</span>
+        </div>
+        <div class="header__main">
+            <ul class="header__links">
+                <li class="header__link-wrapper">
+                    <a href="./index.html" class="header__link"> Home </a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a href="./index.html#about" class="header__link">About </a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a href="./index.html#projects" class="header__link">
+                        Projects
+                    </a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a href="./index.html#contact" class="header__link"> Contact </a>
+                </li>
+            </ul>
+            <div class="header__main-ham-menu-cont">
+                <img
+                        src="./assets/svg/ham-menu.svg"
+                        alt="hamburger menu"
+                        class="header__main-ham-menu"
+                />
+                <img
+                        src="./assets/svg/ham-menu-close.svg"
+                        alt="hamburger menu close"
+                        class="header__main-ham-menu-close d-none"
+                />
+            </div>
+        </div>
+    </div>
+    <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+            <ul class="header__sm-menu-links">
+                <li class="header__sm-menu-link">
+                    <a href="./index.html"> Home </a>
+                </li>
 
-<header>
-    <h1>Mutharasan K - Android Developer</h1>
+                <li class="header__sm-menu-link">
+                    <a href="./index.html#about"> About </a>
+                </li>
+
+                <li class="header__sm-menu-link">
+                    <a href="./index.html#projects"> Projects </a>
+                </li>
+
+                <li class="header__sm-menu-link">
+                    <a href="./index.html#contact"> Contact </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
-
-<nav>
-    <a href="#about">My Profile</a>
-    <a href="#projects">My Projects</a>
-    <a href="#contact">Contact Details</a>
-</nav>
-
-<div class="container">
-    <section class="main" id="about">
-        <h2>About Me</h2>
-        <p>Android developer with 2 years of experience designing and creating user-friendly mobile applications. Dedicated and results-driven. In an effort to advance as a developer, I'm looking to add my expertise to a creative development team.</p>
-    </section>
-
-    <section class="main" id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Over 2 years of experience in Android app development.</li>
-            <li>Proficient in Java and Kotlin programming languages.</li>
-            <li>Strong knowledge of Android SDK, Android Studio, and Android architecture components.</li>
-            <li>APIs and Libraries: RESTful APIs, Retrofit, OkHttp.</li>
-            <li>Database Management: SQLite, Room.</li>
-            <li>Dependency Injection: Dagger, Hilt.</li>
-            <li>Jetpack Components: ViewModel, LiveData, Room, Navigation, Data Binding.</li>
-            <li>Multithreading: AsyncTask, Handler, Coroutines.</li>
-            <li>Debugging and Testing: Logcat, UI Testing.</li>
-            <li>Firebase integration - Auth, Database, and Analytics.</li>
-            <li>Play Store and App Store application submission and updates.</li>
-        </ul>
-    </section>
-
-    <section class="main" id="mobility">
-        <h2>Mobility Concepts</h2>
-        <ul>
-            <li>Experience with Git and GitHub.</li>
-            <li>Worked with Google Sign-in, Firebase with push notifications, and Google Maps.</li>
-            <li>Razorpay Payment integration.</li>
-            <li>DeepLinking.</li>
-            <li>Google Ads.</li>
-        </ul>
-    </section>
-
-    <section class="main" id="qualifications">
-        <h2>Qualifications</h2>
-        <p>Bachelor of Computer Science</p>
-    </section>
-
-    <section class="main" id="experience">
-        <h2>Career History</h2>
-        <div class="experience">
-            <p><strong>Company:</strong> Colan InfoTech Pvt Ltd.</p>
-            <p><strong>Technology:</strong> Mobile Application Development</p>
-            <p><strong>Designation:</strong> Android Developer</p>
+<section class="home-hero">
+    <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, My name is Mutharasan</h1>
+        <div class="home-hero__info">
+            <p class="text-primary">
+                I'm an Android Developer with over two years of experience in native app development
+                using Kotlin and Java.
+            </p>
         </div>
-    </section>
+        <div class="home-hero__cta">
+            <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+    </div>
+    <div class="home-hero__socials">
+        <div class="home-hero__social">
+            <a href="https://www.linkedin.com/in/mutharasan-karuppaiyan-19a9b5215/"
+               class="home-hero__social-icon-link">
+                <img
+                        src="./assets/png/linkedin-ico.png"
+                        alt="icon"
+                        class="home-hero__social-icon"
+                />
+            </a>
+        </div>
+        <div class="home-hero__social">
+            <a href="https://github.com/MUTHUARASAN266" class="home-hero__social-icon-link">
+                <img
+                        src="./assets/png/github-ico.png"
+                        alt="icon"
+                        class="home-hero__social-icon"
+                />
+            </a>
+        </div>
+        <div class="home-hero__social">
+            <a href="https://medium.com/@km.arasankpk266" class="home-hero__social-icon-link">
+                <img
+                        src="./assets/png/medium.png"
+                        alt="icon"
+                        class="home-hero__social-icon"
+                />
+            </a>
+        </div>
+    </div>
+    <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+    </div>
+</section>
+<section id="about" class="about sec-pad">
+    <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main">About Me</span>
+            <span class="heading-sec__sub">
+         I'm an Android Developer passionate about creating efficient and user-friendly apps.
+          </span>
+        </h2>
+        <div class="about__content">
+            <div class="about__content-main">
+                <h3 class="about__content-title">Get to know me!</h3>
+                <div class="about__content-details">
+                    <p class="about__content-details-para">
+                        Hey! It's
+                        <strong>Mutharasan K</strong>
+                        and I'm an <strong>Android Developer</strong> located in Tamil Nadu. I enjoy
+                        building mobile applications that solve real-world problems.
+                    </p>
+                    <p class="about__content-details-para">
+                        Feel free to reach out to discuss any project ideas or collaborations!
+                        <strong>contact</strong> me here.
+                    </p>
+                </div>
+                <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+                >Contact</a
+                >
+            </div>
+            <div class="about__content-skills">
+                <h3 class="about__content-title">My Skills</h3>
+                <div class="skills">
+                    <div class="skills__skill">Android</div>
+                    <div class="skills__skill">Kotlin</div>
+                    <div class="skills__skill">Java</div>
+                    <div class="skills__skill">Firebase</div>
+                    <div class="skills__skill">RESTful APIs</div>
+                    <div class="skills__skill">Git</div>
+                    <div class="skills__skill">UI/UX Design</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects" class="projects sec-pad">
+    <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Projects</span>
+            <span class="heading-sec__sub">
+             Check out some of my featured projects.
+          </span>
+        </h2>
 
-    <section class="main" id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>DietMaster Go</h3>
-            <p><strong>Description:</strong> DietMaster Go is a professional meal plan system that includes recommended meal plans, healthy grocery lists, food and activity logging tools, and a messaging system activated by an authorized nutrition counsellor.</p>
-            <p><a href="https://play.google.com/store/apps/details?id=com.dietmaster.go&hl=en&gl=US">Play Store Link</a></p>
+        <div class="projects__content">
+            <div class="projects__row">
+                <div class="projects__row-img-cont">
+                    <img
+                            src="./assets/jpeg/project-mockup-example_dmgo_plus.jpg"
+                            alt="Software Screenshot"
+                            class="projects__row-img"
+                            loading="lazy"
+                    />
+                </div>
+                <div class="projects__row-content">
+                    <h3 class="projects__row-content-title">DietMasterGo+</h3>
+                    <p class="projects__row-content-desc">
+                        DietMaster Go Plus is a professional meal plan system that includes
+                        recommended meal plans,
+                        healthy grocery lists, food and activity logging tools and messaging system
+                        that can only be activated
+                        by an authorized nutrition counselor.
+                    </p>
+                    <a
+                            href="./project-1.html"
+                            class="btn btn--med btn--theme dynamicBgClr"
+                            target="_blank"
+                    >Case Study</a
+                    >
+                </div>
+            </div>
+            <div class="projects__row">
+                <div class="projects__row-img-cont">
+                    <img
+                            src="./assets/jpeg/project-mockup-example_student_app.jpg"
+                            alt="Software Screenshot"
+                            class="projects__row-img"
+                            loading="lazy"
+                    />
+                </div>
+                <div class="projects__row-content">
+                    <h3 class="projects__row-content-title">Student Info</h3>
+                    <p class="projects__row-content-desc">
+                        The Student Info app simplifies managing student details with a
+                        user-friendly interface.
+                        Teachers can add and view student information, including name, age, and
+                        location, through organized screens.
+                        A map feature shows student addresses, and secure authentication ensures
+                        data protection.
+                    </p>
+                    <a
+                            href="./project-2.html"
+                            class="btn btn--med btn--theme dynamicBgClr"
+                            target="_blank"
+                    >Case Study</a
+                    >
+                </div>
+            </div>
+            <div class="projects__row">
+                <div class="projects__row-img-cont">
+                    <img
+                            src="./assets/jpeg/project-mockup-example_weather_app.jpg"
+                            alt="Software Screenshot"
+                            class="projects__row-img"
+                            loading="lazy"
+                    />
+                </div>
+                <div class="projects__row-content">
+                    <h3 class="projects__row-content-title">Weather App</h3>
+                    <p class="projects__row-content-desc">
+                        MyWeather App simplifies weather updates with accurate forecasts, including
+                        today's weather,
+                        humidity, and wind speed. Designed for ease, it provides essential
+                        information at a glance.
+                        While coverage is expanding, expect continuous improvements and wider reach.
+                    </p>
+                    <a
+                            href="./project-3.html"
+                            class="btn btn--med btn--theme dynamicBgClr"
+                            target="_blank"
+                    >Case Study</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+            <span class="heading-sec__sub heading-sec__sub--lt">
+            I'm always eager to explore new opportunities and welcome any outreach. Feel free to get in touch with me
+          </span>
+        </h2>
+        <div class="contact__form-container">
+            <form action="#" class="contact__form">
+                <div class="contact__form-field">
+                    <label class="contact__form-label" for="name">Name</label>
+                    <input
+                            required
+                            placeholder="Enter Your Name"
+                            type="text"
+                            class="contact__form-input"
+                            name="name"
+                            id="name"
+                    />
+                </div>
+                <div class="contact__form-field">
+                    <label class="contact__form-label" for="email">Email</label>
+                    <input
+                            required
+                            placeholder="Enter Your Email"
+                            type="text"
+                            class="contact__form-input"
+                            name="email"
+                            id="email"
+                    />
+                </div>
+                <div class="contact__form-field">
+                    <label class="contact__form-label" for="message">Message</label>
+                    <textarea
+                            required
+                            cols="30"
+                            rows="10"
+                            class="contact__form-input"
+                            placeholder="Enter Your Message"
+                            name="message"
+                            id="message"
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn btn--theme contact__btn">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="main-container">
+        <div class="main-footer__upper">
+            <div class="main-footer__row main-footer__row-1">
+                <h2 class="heading heading-sm main-footer__heading-sm">
+                    <span>Social</span>
+                </h2>
+                <div class="main-footer__social-cont">
+                    <a target="_blank" rel="noreferrer"
+                       href="https://www.linkedin.com/in/mutharasan-karuppaiyan-19a9b5215/">
+                        <img
+                                class="main-footer__icon"
+                                src="./assets/png/linkedin-ico.png"
+                                alt="icon"
+                        />
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/MUTHUARASAN266">
+                        <img
+                                class="main-footer__icon"
+                                src="./assets/png/github-ico.png"
+                                alt="icon"
+                        />
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="https://medium.com/@km.arasankpk266">
+                        <img
+                                class="main-footer__icon"
+                                src="./assets/png/medium.png"
+                                alt="icon"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="main-footer__row main-footer__row-2">
+                <h4 class="heading heading-sm text-lt">Mutharasan k</h4>
+                <p class="main-footer__short-desc">
+                    I am open to discussing new projects, creative ideas,
+                    or opportunities to be part of your vision. Feel free to reach out through any
+                    of the channels mentioned.
+                </p>
+            </div>
         </div>
 
-        <div class="project">
-            <h3>Student Details App</h3>
-            <p><strong>Description:</strong> An app for collecting and displaying student details with a map screen for viewing student locations. Built using Kotlin, Jetpack components, fragment navigation graph, view binding, Firebase Realtime Database, and Firestore.</p>
-            <p><strong>Features:</strong> Authentication screen, adding student details like image, location, name, and school information, student list view, and map screen.</p>
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+            &copy; Copyright 2021. Made by
+            <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+            >
         </div>
-
-        <div class="project">
-            <h3>Weather App</h3>
-            <p><strong>Description:</strong> An app displaying current weather and wind speed using Jetpack components like LiveData, view binding, navigation graph, coroutines, ViewModel, and Hilt DI.</p>
-        </div>
-    </section>
-
-    <section class="main" id="contact">
-        <h2>Contact Me</h2>
-        <p><strong>WhatsApp:</strong> +91 8220189947</p>
-        <p><strong>Email:</strong> mutharasan.karuppaiyan@gmail.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mutharasan-karuppaiyan-19a9b5215/">linkedin.com/in/mutharasan-karuppaiyan</a></p>
-        <p><strong>Medium:</strong> <a href="https://medium.com/@km.arasankpk266">medium.com//@km.arasankpk266</a></p>
-    </section>
-</div>
-
-<footer class="footer">
-    <p>&copy; 2024 Mutharasan K</p>
+    </div>
 </footer>
 
+<script src="./index.js"></script>
 </body>
 </html>
