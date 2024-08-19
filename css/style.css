@@ -131,6 +131,12 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+  .heading-sm-contact-info  {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+   }
+
 .main-container {
   max-width: 120rem;
   margin: auto;
